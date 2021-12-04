@@ -12,11 +12,27 @@
 	<div class="wrapper">
 		<div class="container p-3">
 			<div class="row m-3 justify-content-between">
+				<div class="col-12 m-3 -custom">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="difficulty" id="low" value="0" checked>
+						<label class="form-check-label" for="low">Low difficulty</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="difficulty" id="medium" value="1">
+						<label class="form-check-label" for="medium">Medium difficulty</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="difficulty" id="high" value="2">
+						<label class="form-check-label" for="high">High difficulty</label>
+					</div>
+				</div>
+			</div>
+			<div class="row m-3 justify-content-between">
 				<div class="col-1 p-0">
 					<button type="button" id="prev" class="btn btn-block btn-outline-primary -custom"><=</button>
 				</div>
 				<div class="col-9 p-0">
-					<input type="text" id="card" readonly>
+					<input type="text" id="card" class="-custom" readonly>
 				</div>
 				<div class="col-1 p-0">
 					<button type="button" id="next" class="btn btn-block btn-outline-primary -custom">=></button>
@@ -27,7 +43,7 @@
 			</div>
 			<div class="row m-3 justify-content-center">
 				<div class="col-10">
-					<input placeholder="enter translation" type="text" id="answer">
+					<input placeholder="enter translation" type="text" id="answer" class="-custom">
 				</div>
 			</div>
 			<div class="row justify-content-around">
